@@ -21,3 +21,4 @@ end
 
 def select_character_names_and_number_of_books_they_are_in
   "SELECT characters.name, COUNT(books.title) FROM characters, books, character_books WHERE character_books.character_id = characters.id AND character_books.book_id  = books.id ORDER BY COUNT(books.title) DESC;"
+end 
